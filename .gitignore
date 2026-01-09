@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# keys
+tidal
+tidal.pub
+
+# videos
+src/assets/Videos/

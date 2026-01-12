@@ -17,7 +17,7 @@ export const navLinks = [
     },
     {
         name:'My Channels',
-        path:'*'
+        path:'watchlist'
     },
   ];
 

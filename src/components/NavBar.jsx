@@ -33,7 +33,7 @@ export const NavBar = () => {
                 return(
                   <Link key={index} 
                   // target='_blank'
-                  className='' to={item.link}>
+                  className='text-2xl m-2' to={item.link}>
                       <item.icon />
                   </Link>
                 )

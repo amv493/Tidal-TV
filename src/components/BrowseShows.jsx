@@ -25,6 +25,8 @@ export const BrowseShows = () => {
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={50}
                 slidesPerView={4}
+                loop = {true}
+                slideToClickedSlide
                 navigation
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}

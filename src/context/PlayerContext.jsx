@@ -22,7 +22,7 @@ export const PlayerProvider = ({ children }) => {
     // This function BOTH selects an episode & navigates
     const playNextEpisode = () => {
         console.log("Shuffle clicked");
-        
+
         if (!watchList.length) {
             console.log("Watchlist empty");
             return;
@@ -50,6 +50,10 @@ export const PlayerProvider = ({ children }) => {
         // This takes you to the watch screen for the episode 
         navigate("/watch");
     };
+
+    const skipEpisode = () => {
+        playNextEpisode(); // Will change in future
+    }
 
     return (
         <PlayerContext.Provider 

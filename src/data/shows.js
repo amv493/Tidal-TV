@@ -28,12 +28,20 @@ import xsE2 from '../assets/Videos/XS-E2.mp4';
 import smPoster from '../assets/Pictures/SM-Poster.jpg';
 import smE1 from '../assets/Videos/SM-E1.mp4';
 import smE2 from '../assets/Videos/SM-E2.mp4';
+import dbzHeader from '../assets/Pictures/DBZ-Header.jpg';
+import dbLogo from '../assets/Pictures/DBZ-Logo.png';
 import dbzPoster from '../assets/Pictures/DBZ-Poster.jpg';
 import dbzE1 from '../assets/Videos/DBZ-E1.mp4';
 import dbzE2 from '../assets/Videos/DBZ-E2.mp4';
 import ygoPoster from '../assets/Pictures/YGO-Poster.jpg';
 import ygoE1 from '../assets/Videos/YGO-E1.mp4';
 import ygoE2 from '../assets/Videos/YGO-E2.mp4';
+import sxPoster from '../assets/Pictures/SX-Poster.jpg';
+import sxE1 from '../assets/Videos/SX-E1.mp4';
+import sxE2 from '../assets/Videos/SX-E2.mp4';
+import tmntPoster from '../assets/Pictures/TMNT-Poster.jpg';
+import tmntE1 from '../assets/Videos/TMNT-E1.mp4';
+import tmntE2 from '../assets/Videos/TMNT-E2.mp4';
 
 export const shows = [
     {
@@ -92,29 +100,29 @@ export const shows = [
         id: 6, 
         title: "Xiolin Showdown", 
         img: xsPoster,
-        headerImg: atlaHeader,
+        headerImg: '',
         desc: ' ',
         episodes: [
-            { id: "e1", title: "", videoUrl: xsE1 }, 
-            { id: "e2", title: "", videoUrl: xsE2 }
+            { id: "e1", title: "The Journey of a Thousand Miles", videoUrl: xsE1 }, 
+            { id: "e2", title: "Like a Rock!", videoUrl: xsE2 }
         ]
     }, 
     {
         id: 7, 
-        title: "Pokemon", 
+        title: "Pokemon: Indigo League", 
         img: pmPoster,
-        headerImg: atlaHeader,
+        headerImg: '',
         desc: ' ',
         episodes: [
-            { id: "e1", title: "", videoUrl: pmE1 }, 
-            { id: "e2", title: "", videoUrl: pmE2 }
+            { id: "e1", title: "Pokémon, I Choose You!", videoUrl: pmE1 }, 
+            { id: "e2", title: "Pokémon Emergency!", videoUrl: pmE2 }
         ]
     }, 
     {
         id: 8, 
         title: "Yu-Gi-Oh! Duel Monsters", 
         img: ygoPoster,
-        headerImg: atlaHeader,
+        headerImg: '',
         desc: '',
         episodes: [
             { id: "e1", title: "The Heart of the Cards", videoUrl: ygoE1 }, 
@@ -125,22 +133,44 @@ export const shows = [
         id: 9, 
         title: "Sailor Moon", 
         img: smPoster,
-        headerImg: atlaHeader,
+        headerImg: '',
         desc: ' ',
         episodes: [
-            { id: "e1", title: "The Boy in the Iceburg", videoUrl: smE1 }, 
-            { id: "e2", title: "The Avatar Returns", videoUrl: smE2 }
+            { id: "e1", title: "A Moon Star is Born", videoUrl: smE1 }, 
+            { id: "e2", title: "Punish Them! The House of Fortune is the Monster Man", videoUrl: smE2 }
         ]
     }, 
     {
         id: 10, 
         title: "Dragon Ball Z", 
         img: dbzPoster,
-        headerImg: atlaHeader,
+        headerImg: '',
+        desc: 'Goku returns with his son Gohan, but peace never lasts. As powerful enemies like Frieza, Cell, and Buu threaten the universe, Goku uncovers his Saiyan origins, reaches new heights of power, and proves himself among the strongest warriors alive all while gaining allies, facing rivals, and balancing battle with family as the ever cheerful Saiyan protector of Earth.',
+        episodes: [
+            { id: "e1", title: "The New Threat", videoUrl: dbzE1 }, 
+            { id: "e2", title: "Reunions", videoUrl: dbzE2 }
+        ]
+    }, 
+    {
+        id: 11, 
+        title: "Sonic X", 
+        img: sxPoster,
+        headerImg: '',
         desc: '',
         episodes: [
-            { id: "e1", title: "", videoUrl: dbzE1 }, 
-            { id: "e2", title: "", videoUrl: dbzE2 }
+            { id: "e1", title: "Chaos Control Freaks", videoUrl: sxE1 }, 
+            { id: "e2", title: "Infiltrate! Area 99", videoUrl: sxE2 }
+        ]
+    }, 
+    {
+        id: 12, 
+        title: "TMNT", 
+        img: tmntPoster,
+        headerImg: '',
+        desc: '',
+        episodes: [
+            { id: "e1", title: "Things Change", videoUrl: tmntE1 }, 
+            { id: "e2", title: "A Better Mousetrap", videoUrl: tmntE2 }
         ]
     }, 
 ];
@@ -167,5 +197,12 @@ export const headers = [
         logo: clLogo,
         headerImg: clHeader,
         desc: 'Students Yumi, Jeremy, Odd and Ulrich stumble across a large Supercomputer in an old factory by their school. They soon discover that the computer houses an alternate world, Lyoko, and that by using computer controls they can transport themselves into this virtual universe....',
-    }
+    },
+    {
+        id: 4, 
+        title: "Dragon Ball Z", 
+        logo: dbLogo,
+        headerImg: dbzHeader,
+        desc: 'Goku returns with his son Gohan, but peace never lasts. As powerful enemies like Frieza, Cell, and Buu threaten the universe, Goku uncovers his Saiyan origins, reaches new heights of power, and proves himself among the strongest warriors alive all while gaining allies, facing rivals, and balancing battle with family as the ever cheerful Saiyan protector of Earth.',
+    },
 ];

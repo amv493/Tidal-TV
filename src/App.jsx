@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Watch from './pages/Watch';
 import WatchList from './pages/WatchList';
 import './index.css'
+import "./styles/swiper.css";
 import { NavBar } from './components/NavBar';
 
 function App() {

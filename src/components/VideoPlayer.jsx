@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import VideoControls from "./VideoControls"; 
+import { shows } from "../data/shows";
 
-export default function VideoPlayer({ episode, onEnded, onNext, onSkip, episodeTitle }) {
+export default function VideoPlayer({ episode, onEnded, onNext, onSkip }) {
   const videoRef = useRef(null);
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
@@ -59,9 +60,14 @@ export default function VideoPlayer({ episode, onEnded, onNext, onSkip, episodeT
         {/* Title overlay */}
         {showControls && (
             <div
-                className='absolute top-4 left-4 z-30 bg-black/60 backgrop-blur-sm text-white text-xl font-semibold px-4 py-2 rounded pointer-events-none'
+                className='absolute top-4 left-4 z-30 bg-black/60 backgrop-blur-sm text-white font-semibold px-4 py-2 rounded pointer-events-none'
             >
-                {episode.title}
+                <div className='text-xs'>
+                    {shows.title}
+                </div>
+                <div className='text-5xl'>
+                    {episode.title}
+                </div>
             </div>
         )}
         <video

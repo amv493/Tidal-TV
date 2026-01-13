@@ -13,7 +13,7 @@ export default function ShowCard({ show }) {
             <div>
                 <img src={show.img} alt='' className='h-[75%] w-[75%]' />
             </div>
-            <div className='flex inline-flex justify-between gap-2 pt-2'>
+            <div className='flex inline-flex justify-between gap-5 pt-2'>
                 <h3 className='py-2 font-bold text-lg'>{show.title}</h3>
 
                 {isInWatchList ? (

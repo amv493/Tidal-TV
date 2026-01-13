@@ -34,12 +34,12 @@ export default function VideoControls({ isPaused, togglePlay, progress, setProgr
             (videoRef.current.duration * percent) / 100;
           setProgress(percent);
         }}
-        className="w-3/4 h-1 accent-red-500 cursor-pointer"
+        className="w-3/4 h-1 accent-blue-500 cursor-pointer"
       />
 
       {/* Buttons */}
       <button onClick={onNext} className="ml-4 px-2 py-1 bg-white text-black rounded">
-        Next
+        ⏭
       </button>
       <button onClick={onSkip} className="ml-2 px-2 py-1 bg-white text-black rounded">
         Skip

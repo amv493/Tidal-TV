@@ -47,60 +47,104 @@ export const shows = [
     {
         id: 1, 
         title: "One Piece", 
+        network: [
+            "",
+        ],
+        style: "Anime",
+        genre: [
+            "Action", 
+            "Adventure",
+        ], 
         img: opPoster, 
         logo: opLogo,
-        headerImg: opHeader,
         desc: 'Before he was executed, the legendary Pirate King Gold Roger revealed that he had hidden the treasure One Piece somewhere in the Grand Line. Now, many pirates are off looking for this legendary treasure to claim the title Pirate King. One pirate, Monkey D. Luffy, is a boy who had eaten the Devil’s Fruit and gained rubber powers. Now he and his crew are off to find One Piece, while battling enemies and making new friends along the way.',
         episodes: [
-            { id: "e1", title: "I'm Luffy! The Man Who's Gonna Be King of the Pirates!", videoUrl: opE1 }, 
-            { id: "e2", title: "Enter the Great Swordsman! Pirate Hunter Roronoa Zoro!", videoUrl: opE2 }
+            { season: "1", id: "e1", title: "I'm Luffy! The Man Who's Gonna Be King of the Pirates!", videoUrl: opE1 }, 
+            { season: "1", id: "e2", title: "Enter the Great Swordsman! Pirate Hunter Roronoa Zoro!", videoUrl: opE2 }
         ]
     }, 
     {
         id: 2, 
         title: "Avatar: The Last Airbender", 
+        network: [
+            "Nickelodeon",
+        ],
+        style: "Cartoon",
+        genre: [
+            "Action", 
+            "Adventure",
+        ], 
         img: atlaPoster,
-        headerImg: atlaHeader,
         desc: 'The world is divided into four nations -- the Water Tribe, the Earth Kingdom, the Fire Nation and and the Air Nomads -- each represented by a natural element for which the nation is named. Benders have the ability to control and manipulate the element from their nation. Only the Avatar is the master of all four elements. The ruthless Fire Nation wants to conquer the world but the only bender who has enough power, the Avatar, has disappeared ... until now. His tribe soon discovers that Aang is the long-lost Avatar. Now Katara and Sokka must safeguard Aang on his journey to master all four elements and save the world from the Fire Nation.',
         episodes: [
-            { id: "e1", title: "The Boy in the Iceburg", videoUrl: iceburg }, 
-            { id: "e2", title: "The Avatar Returns", videoUrl: avatarReturn }
+            { season: "1", id: "e1", title: "The Boy in the Iceburg", videoUrl: iceburg }, 
+            { season: "1", id: "e2", title: "The Avatar Returns", videoUrl: avatarReturn }
         ]
     }, 
     {
         id: 3, 
         title: "Code Lyoko", 
+        network: [
+            "Cartoon Network",
+        ],
+        style: "Cartoon",
+        genre: [
+            "Action", 
+            "Adventure",
+        ], 
         img: clPoster,
-        headerImg: clHeader,
         desc: 'Students Yumi, Jeremy, Odd and Ulrich stumble across a large Supercomputer in an old factory by their school. They soon discover that the computer houses an alternate world, Lyoko, and that by using computer controls they can transport themselves into this virtual universe. Once inside, they meet a virtual humanoid girl named Aelita who relays the story of X.A.N.A., a sentient virus that has infected the Supercomputer and threatens to destroy Lyoko and ultimately control the Earth. They spend four seasons battling the elusive X.A.N.A., developing new methods and technologies for entering in and out this alternate universe and protecting their classmates, teachers and the world as they know it. Audiences, meanwhile, hang on with anticipation as the question looms- can our heroes put an end to the treat of X.A.N.A.? One thing is certain: they are ready to risk everything to win.',
         episodes: [
-            { id: "e1", title: "Teddygozilla", videoUrl: clEp1 }, 
-            { id: "e2", title: "Seeing Is Believing", videoUrl: clEp2 }
+            { season: "1", id: "e1", title: "Teddygozilla", videoUrl: clEp1 }, 
+            { season: "1", id: "e2", title: "Seeing Is Believing", videoUrl: clEp2 }
         ]
     }, 
     {
         id: 4, 
         title: "Kim Possible", 
+        network: [
+            "Disney Channel",
+        ],
+        style: "Cartoon",
+        genre: [
+            "Action", 
+            "Adventure",
+        ], 
         img: kpPoster,
         episodes: [
-            { id: "e1", title: "Crush", videoUrl: kpE1 }, 
-            { id: "e2", title: "Sink or Swim", videoUrl: kpE2 }
+            { season: "", id: "e1", title: "Crush", videoUrl: kpE1 }, 
+            { season: "", id: "e2", title: "Sink or Swim", videoUrl: kpE2 }
         ]
     }, 
     {
         id: 5, 
         title: "Jackie Chan Adventures", 
+        network: [
+            "WB Kids",
+        ],
+        style: "Cartoon",
+        genre: [
+            "Action", 
+            "Adventure",
+        ], 
         img: jcaPoster,
         episodes: [
-            { id: "e1", title: "The Dark Hand", videoUrl: jcaE1 }, 
-            { id: "e2", title: "The Power Within", videoUrl: jcaE2 }
+            { season: "", id: "e1", title: "The Dark Hand", videoUrl: jcaE1 }, 
+            { season: "", id: "e2", title: "The Power Within", videoUrl: jcaE2 }
         ]
     }, 
     {
         id: 6, 
         title: "Xiolin Showdown", 
+        network: [
+            "WB Kids",
+        ],
+        style: "Cartoon",
+        genre: [
+            "Action", 
+            "Adventure",
+        ], 
         img: xsPoster,
-        headerImg: '',
         desc: ' ',
         episodes: [
             { id: "e1", title: "The Journey of a Thousand Miles", videoUrl: xsE1 }, 
@@ -110,67 +154,113 @@ export const shows = [
     {
         id: 7, 
         title: "Pokemon: Indigo League", 
+        network: [
+            "Cartoon Network",
+            "WB Kids",
+        ],
+        style: "Anime",
+        genre: [
+            "Action", 
+            "Adventure",
+        ], 
         img: pmPoster,
-        headerImg: '',
         desc: ' ',
         episodes: [
-            { id: "e1", title: "Pokémon, I Choose You!", videoUrl: pmE1 }, 
-            { id: "e2", title: "Pokémon Emergency!", videoUrl: pmE2 }
+            { season: "1", id: "e1", title: "Pokémon, I Choose You!", videoUrl: pmE1 }, 
+            { season: "1", id: "e2", title: "Pokémon Emergency!", videoUrl: pmE2 }
         ]
     }, 
     {
         id: 8, 
         title: "Yu-Gi-Oh! Duel Monsters", 
+        network: [
+            "WB Kids",
+            "Cartoon Network", 
+        ],
+        style: "Anime",
+        genre: [
+            "Action", 
+            "Adventure",
+        ], 
         img: ygoPoster,
-        headerImg: '',
         desc: '',
         episodes: [
-            { id: "e1", title: "The Heart of the Cards", videoUrl: ygoE1 }, 
-            { id: "e2", title: "The Gauntlet Is Thrown", videoUrl: ygoE2 }
+            { season: "1", id: "e1", title: "The Heart of the Cards", videoUrl: ygoE1 }, 
+            { season: "1", id: "e2", title: "The Gauntlet Is Thrown", videoUrl: ygoE2 }
         ]
     }, 
     {
         id: 9, 
         title: "Sailor Moon", 
+        network: [
+            "Toonami",
+            "Cartoon Network",
+        ],
+        style: "Anime",
+        genre: [
+            "Action", 
+            "Adventure",
+        ], 
         img: smPoster,
-        headerImg: '',
         desc: ' ',
         episodes: [
-            { id: "e1", title: "A Moon Star is Born", videoUrl: smE1 }, 
-            { id: "e2", title: "Punish Them! The House of Fortune is the Monster Man", videoUrl: smE2 }
+            { season: "1", id: "e1", title: "A Moon Star is Born", videoUrl: smE1 }, 
+            { season: "1", id: "e2", title: "Punish Them! The House of Fortune is the Monster Man", videoUrl: smE2 }
         ]
     }, 
     {
         id: 10, 
         title: "Dragon Ball Z", 
+        network: [
+            "Toonami",
+            "Cartoon Network",
+        ],
+        style: "Anime",
+        genre: [
+            "Action", 
+            "Adventure",
+        ], 
         img: dbzPoster,
-        headerImg: '',
         desc: 'Goku returns with his son Gohan, but peace never lasts. As powerful enemies like Frieza, Cell, and Buu threaten the universe, Goku uncovers his Saiyan origins, reaches new heights of power, and proves himself among the strongest warriors alive all while gaining allies, facing rivals, and balancing battle with family as the ever cheerful Saiyan protector of Earth.',
         episodes: [
-            { id: "e1", title: "The New Threat", videoUrl: dbzE1 }, 
-            { id: "e2", title: "Reunions", videoUrl: dbzE2 }
+            { season: "1", id: "e1", title: "The New Threat", videoUrl: dbzE1 }, 
+            { season: "1", id: "e2", title: "Reunions", videoUrl: dbzE2 }
         ]
     }, 
     {
         id: 11, 
         title: "Sonic X", 
+        network: [
+            "WB Kids",
+        ],
+        style: "Cartoon",
+        genre: [
+            "Action", 
+            "Adventure",
+        ], 
         img: sxPoster,
-        headerImg: '',
         desc: '',
         episodes: [
-            { id: "e1", title: "Chaos Control Freaks", videoUrl: sxE1 }, 
-            { id: "e2", title: "Infiltrate! Area 99", videoUrl: sxE2 }
+            { season: "1", id: "e1", title: "Chaos Control Freaks", videoUrl: sxE1 }, 
+            { season: "1", id: "e2", title: "Infiltrate! Area 99", videoUrl: sxE2 }
         ]
     }, 
     {
         id: 12, 
         title: "TMNT", 
+        network: [
+            "WB Kids",
+        ],
+        style: "Cartoon",
+        genre: [
+            "Action", 
+            "Adventure",
+        ], 
         img: tmntPoster,
-        headerImg: '',
         desc: '',
         episodes: [
-            { id: "e1", title: "Things Change", videoUrl: tmntE1 }, 
-            { id: "e2", title: "A Better Mousetrap", videoUrl: tmntE2 }
+            { season: "1", id: "e1", title: "Things Change", videoUrl: tmntE1 }, 
+            { season: "1", id: "e2", title: "A Better Mousetrap", videoUrl: tmntE2 }
         ]
     }, 
 ];

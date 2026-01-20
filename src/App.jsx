@@ -6,19 +6,19 @@ import Watch from './pages/Watch';
 import WatchList from './pages/WatchList';
 import './index.css'
 import "./styles/swiper.css";
-import { NavBar } from './components/NavBar';
 
 function App() {
 
   return (
+    <div className='bg-black from-tide-abyss via-tide-deep to-black text-white'>
       <PlayerProvider>
-        <NavBar/>
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/watch' element={<Watch />} />
             <Route path='/watchlist' element={<WatchList />} />
         </Routes>
       </PlayerProvider>
+    </div>
   );
 }
 

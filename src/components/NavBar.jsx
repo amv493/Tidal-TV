@@ -5,13 +5,11 @@ import { navLinks, navIcons } from '../data/navlinks';
 
 export const NavBar = () => {
 
-
-
   return (
-    <nav className='flex items-center justify-between gap-2 h-15 m-0 p-4 top-0 z-[100] bg-blue-700 text-white sticky'>
+    <nav className='flex items-center justify-between gap-2 h-15 m-0 p-4 top-0 z-[100] bg-tide-navy/90 backdrop-blur-md border-b border-white/10 text-white sticky'>
         <div className='inline-flex'>
             <div>
-                <Link to={'/'} className='text-3xl'>
+                <Link to={'/'} className='text-3xl font-semibold'>
                     <h1>TIDAL TV</h1>
                 </Link>
             </div>

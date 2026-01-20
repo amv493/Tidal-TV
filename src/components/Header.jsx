@@ -3,7 +3,7 @@ import { headers } from "../data/shows.js";
 
 // Import Swiper React Components & Swiper styles.............
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, A11y } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -18,10 +18,14 @@ export const Header = () => {
     <div className=''>
         <Swiper
             // install Swiper modules
-            modules={[Navigation, Pagination, A11y]}
+            modules={[Autoplay, Navigation, Pagination, A11y]}
             spaceBetween={50}
             slidesPerView={1}
             loop = {true}
+            autoplay = {{
+                delay: 10000, 
+                disableOnInteraction: false,
+            }}
             navigation
             pagination={{ clickable: true }}
             onSwiper={(swiper) => console.log(swiper)}
@@ -31,7 +35,7 @@ export const Header = () => {
                 headers.map(({id, logo, headerImg, desc}, ) => {
                     return (
                         <SwiperSlide key={id}>
-                            <div className='w-screen h-screen items-center justify-center my-0 mx-auto relative'>
+                            <div className='w-screen h-screen items-center justify-center m-0 relative'>
                                 <div className='flex flex-col absolute w-[35%] h-[20%] left-0 top-1/3 -translate-y-1/3 text-white ml-20 z-30'>
                                     <img src={logo} alt="" className='relative w-48 h-auto mt-5 mb-4 z-100' />
                                     <p className='mx-10 text-xl text-justify'>{desc}</p>

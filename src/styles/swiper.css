@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 .swiper-pagination-bullet {
-  @apply w-3 h-3 bg-gray-500 opacity-90 rounded-full transition-all;
+  @apply w-3 h-3 px-3 bg-gray-500 opacity-90 rounded-full transition-all;
 }
 
 .swiper-pagination-bullet-active {
-  @apply px-3 bg-blue-500 opacity-100 scale-125;
+  @apply px-5 bg-blue-500 opacity-100 scale-125;
 }
 
 .swiper-button-next,
